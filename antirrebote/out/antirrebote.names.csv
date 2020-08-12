@@ -1,0 +1,198 @@
+PdM/antirrebote/out/antirrebote.elf:1a00037c 00000008 t fsmError
+PdM/antirrebote/out/antirrebote.elf:10000048 00000004 b counter.13865
+PdM/antirrebote/out/antirrebote.elf:1000004c 00000001 b fsmState
+PdM/antirrebote/out/antirrebote.elf:1a0004b8 00000044 t Board_LED_Init
+PdM/antirrebote/out/antirrebote.elf:1a0004fc 00000040 t Board_TEC_Init
+PdM/antirrebote/out/antirrebote.elf:1a00053c 00000040 t Board_GPIO_Init
+PdM/antirrebote/out/antirrebote.elf:1a00057c 00000030 t Board_ADC_Init
+PdM/antirrebote/out/antirrebote.elf:1a0005ac 00000038 t Board_SPI_Init
+PdM/antirrebote/out/antirrebote.elf:1a0005e4 00000024 t Board_I2C_Init
+PdM/antirrebote/out/antirrebote.elf:1a001a18 00000008 t GpioButtons
+PdM/antirrebote/out/antirrebote.elf:1a001a20 0000000c t GpioLeds
+PdM/antirrebote/out/antirrebote.elf:1a001a2c 00000012 t GpioPorts
+PdM/antirrebote/out/antirrebote.elf:1a001a44 00000004 t InitClkStates
+PdM/antirrebote/out/antirrebote.elf:1a001a48 00000074 t pinmuxing
+PdM/antirrebote/out/antirrebote.elf:1a000714 0000002c t Chip_UART_GetIndex
+PdM/antirrebote/out/antirrebote.elf:1a001abc 00000008 t UART_BClock
+PdM/antirrebote/out/antirrebote.elf:1a001ac4 00000008 t UART_PClock
+PdM/antirrebote/out/antirrebote.elf:1a000870 00000014 t Chip_ADC_GetClockIndex
+PdM/antirrebote/out/antirrebote.elf:1a000884 00000032 t getClkDiv
+PdM/antirrebote/out/antirrebote.elf:1a00094c 000000a0 t pll_calc_divs
+PdM/antirrebote/out/antirrebote.elf:1a0009ec 0000010c t pll_get_frac
+PdM/antirrebote/out/antirrebote.elf:1a000af8 0000004c t Chip_Clock_FindBaseClock
+PdM/antirrebote/out/antirrebote.elf:1a000d6c 00000022 t Chip_Clock_GetDivRate
+PdM/antirrebote/out/antirrebote.elf:10000050 00000008 b audio_usb_pll_freq
+PdM/antirrebote/out/antirrebote.elf:1a001ad8 0000006c t periph_to_base
+PdM/antirrebote/out/antirrebote.elf:1a001b44 00000048 t InitClkStates
+PdM/antirrebote/out/antirrebote.elf:1a001034 00000014 t Chip_SSP_GetClockIndex
+PdM/antirrebote/out/antirrebote.elf:1a001048 00000018 t Chip_SSP_GetPeriphClockIndex
+PdM/antirrebote/out/antirrebote.elf:10000000 00000038 d i2c
+PdM/antirrebote/out/antirrebote.elf:10000038 00000004 d ClockSpeed
+PdM/antirrebote/out/antirrebote.elf:10000058 00000004 b callBackFuncParams
+PdM/antirrebote/out/antirrebote.elf:10000060 00000008 b tickCounter
+PdM/antirrebote/out/antirrebote.elf:10000068 00000004 b tickHookFunction
+PdM/antirrebote/out/antirrebote.elf:1a001284 00000034 t gpioObtainPinInit
+PdM/antirrebote/out/antirrebote.elf:1000006c 00000004 b g_hUsb
+PdM/antirrebote/out/antirrebote.elf:1a001c78 t __init_array_end
+PdM/antirrebote/out/antirrebote.elf:1a001c74 b __preinit_array_end
+PdM/antirrebote/out/antirrebote.elf:1a001c74 t __init_array_start
+PdM/antirrebote/out/antirrebote.elf:1a001c74 b __preinit_array_start
+PdM/antirrebote/out/antirrebote.elf:1a000b90 0000001c T Chip_Clock_GetDividerSource
+PdM/antirrebote/out/antirrebote.elf:1a00034a 00000014 T buttonReleased
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W TIMER2_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000184 00000002 W DebugMon_Handler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W RIT_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a080000 A __top_MFlashA512
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W ADCHS_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000114 T __section_table_start
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W FLASH_EEPROM_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W I2C0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a00065c 00000008 T __stdio_init
+PdM/antirrebote/out/antirrebote.elf:1a0015e8 0000003e T delayRead
+PdM/antirrebote/out/antirrebote.elf:1a00017a 00000002 W HardFault_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000000 A __vectors_start__
+PdM/antirrebote/out/antirrebote.elf:1a00092a 0000000c T Chip_ADC_SetResolution
+PdM/antirrebote/out/antirrebote.elf:1a000324 00000012 T buttonState
+PdM/antirrebote/out/antirrebote.elf:1a001258 0000002c T SysTick_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000428 00000002 W initialise_monitor_handles
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SDIO_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W ATIMER_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000186 00000002 W PendSV_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000178 00000002 W NMI_Handler
+PdM/antirrebote/out/antirrebote.elf:1a001c80 R __exidx_end
+PdM/antirrebote/out/antirrebote.elf:1a000150 T __data_section_table_end
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W I2C1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W UART1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO5_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W CAN1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000360 0000001c T fsmInit
+PdM/antirrebote/out/antirrebote.elf:53ff7462 A __valid_user_code_checksum
+PdM/antirrebote/out/antirrebote.elf:1a001c80 R _etext
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W USB1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W I2S0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W TIMER3_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000e0e 0000000c T Chip_Clock_GetBaseClocktHz
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W UART0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001a8 00000012 T bss_init
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SGPIO_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a001628 T __aeabi_uldivmod
+PdM/antirrebote/out/antirrebote.elf:10000078 ? _noinit
+PdM/antirrebote/out/antirrebote.elf:10000070 00000004 B SystemCoreClock
+PdM/antirrebote/out/antirrebote.elf:1a000740 00000054 T Chip_UART_Init
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W ADC0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000180 00000002 W UsageFault_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000e8c 0000004c T Chip_Clock_GetRate
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO6_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a00069c 0000006c T Board_SetupClocking
+PdM/antirrebote/out/antirrebote.elf:20008000 A __top_RamAHB32
+PdM/antirrebote/out/antirrebote.elf:1a001658 000002d0 T __udivmoddi4
+PdM/antirrebote/out/antirrebote.elf:1a001a14 00000004 T ExtRateIn
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W IntDefaultHandler
+PdM/antirrebote/out/antirrebote.elf:1a000300 T __CRP_WORD_END__
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SSP0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000384 000000a4 T fsmUpdate
+PdM/antirrebote/out/antirrebote.elf:1a001c78 R __exidx_start
+PdM/antirrebote/out/antirrebote.elf:1a0002fc 00000004 T CRP_WORD
+PdM/antirrebote/out/antirrebote.elf:1a00192c 00000048 T __libc_init_array
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W ADC1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a00062c 00000030 T Board_Init
+PdM/antirrebote/out/antirrebote.elf:1a0004b6 00000002 W _init
+PdM/antirrebote/out/antirrebote.elf:1a000114 T __data_section_table
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W RTC_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:10000078 B _ebss
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W TIMER0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a00042c 00000088 T Reset_Handler
+PdM/antirrebote/out/antirrebote.elf:1a0011dc 0000007c T tickInit
+PdM/antirrebote/out/antirrebote.elf:20010000 A __top_RamAHB_ETB16
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SPI_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a00112c 00000038 T Chip_I2C_SetClockRate
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W LCD_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000b44 0000004c T Chip_Clock_EnableCrystal
+PdM/antirrebote/out/antirrebote.elf:10008000 A __top_RamLoc32
+PdM/antirrebote/out/antirrebote.elf:1a00018a 0000001e T data_init
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W TIMER1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a001108 00000024 T Chip_I2C_Init
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W UART2_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000d00 0000006c T Chip_Clock_GetMainPLLHz
+PdM/antirrebote/out/antirrebote.elf:1a001b8c 000000e6 T gpioPinsInit
+PdM/antirrebote/out/antirrebote.elf:1a001060 00000012 T Chip_SSP_SetClockRate
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO2_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000de8 00000026 T Chip_Clock_GetBaseClock
+PdM/antirrebote/out/antirrebote.elf:10000048 B _bss
+PdM/antirrebote/out/antirrebote.elf:1a0008f8 00000032 T Chip_ADC_SetSampleRate
+PdM/antirrebote/out/antirrebote.elf:1a0015c8 00000020 T delayInit
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W I2S1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a001072 0000003e T Chip_SSP_SetBitRate
+PdM/antirrebote/out/antirrebote.elf:1a001030 00000002 T Chip_GPIO_Init
+PdM/antirrebote/out/antirrebote.elf:1a001a40 00000004 T OscRateIn
+PdM/antirrebote/out/antirrebote.elf:10000078 ? _end_noinit
+PdM/antirrebote/out/antirrebote.elf:10008000 A _vStackTop
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SSP1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000178 T __bss_section_table_end
+PdM/antirrebote/out/antirrebote.elf:1a000336 00000014 T buttonPressed
+PdM/antirrebote/out/antirrebote.elf:1a0012b8 000001ac T gpioInit
+PdM/antirrebote/out/antirrebote.elf:1a001928 00000002 W __aeabi_ldiv0
+PdM/antirrebote/out/antirrebote.elf:1a001538 0000001c T USB0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO3_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SCT_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000bac 0000001c T Chip_Clock_GetDividerDivisor
+PdM/antirrebote/out/antirrebote.elf:1a0002fc T __CRP_WORD_START__
+PdM/antirrebote/out/antirrebote.elf:1a001974 000000a0 T memset
+PdM/antirrebote/out/antirrebote.elf:1a00017c 00000002 W MemManage_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000300 00000024 T main
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W WDT_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:2000c000 A __top_RamAHB16
+PdM/antirrebote/out/antirrebote.elf:1008a000 A __top_RamLoc40
+PdM/antirrebote/out/antirrebote.elf:1a000182 00000002 W SVC_Handler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO7_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000e1c 0000003c T Chip_Clock_EnableOpts
+PdM/antirrebote/out/antirrebote.elf:1a000bc8 000000b8 T Chip_Clock_GetClockInputHz
+PdM/antirrebote/out/antirrebote.elf:1a000c80 00000080 T Chip_Clock_CalcMainPLLValue
+PdM/antirrebote/out/antirrebote.elf:1a001164 00000038 T SystemInit
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W SPIFI_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W QEI_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000150 T __bss_section_table
+PdM/antirrebote/out/antirrebote.elf:1a001464 0000006a T gpioWrite
+PdM/antirrebote/out/antirrebote.elf:1a0004b4 00000002 W _fini
+PdM/antirrebote/out/antirrebote.elf:1a0008b8 00000040 T Chip_ADC_Init
+PdM/antirrebote/out/antirrebote.elf:10000074 00000004 B g_pUsbApi
+PdM/antirrebote/out/antirrebote.elf:1a000664 00000038 T Board_SetupMuxing
+PdM/antirrebote/out/antirrebote.elf:1a000794 000000dc T Chip_UART_SetBaudFDR
+PdM/antirrebote/out/antirrebote.elf:1a0011b8 0000000c T tickRead
+PdM/antirrebote/out/antirrebote.elf:10000040 00000008 D tickRateMS
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W ETH_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:10000000 ? _end_uninit_RESERVED
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W CAN0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:10000000 D _data
+PdM/antirrebote/out/antirrebote.elf:10000078 B _pvHeapStart
+PdM/antirrebote/out/antirrebote.elf:1a000178 T __section_table_end
+PdM/antirrebote/out/antirrebote.elf:1a0010b0 00000038 T Chip_SSP_Init
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GINT0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W DAC_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000608 00000024 T Board_Debug_Init
+PdM/antirrebote/out/antirrebote.elf:10000048 D _edata
+PdM/antirrebote/out/antirrebote.elf:1a0010e8 00000020 T Chip_I2C_EventHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W M0SUB_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000ed8 00000158 T Chip_SetupCoreClock
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO0_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000000 00000040 T g_pfnVectors
+PdM/antirrebote/out/antirrebote.elf:1a000938 00000014 T SystemCoreClockUpdate
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W DMA_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W EVRT_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1b080000 A __top_MFlashB512
+PdM/antirrebote/out/antirrebote.elf:1a001928 00000002 W __aeabi_idiv0
+PdM/antirrebote/out/antirrebote.elf:1a00017e 00000002 W BusFault_Handler
+PdM/antirrebote/out/antirrebote.elf:1a000e58 00000034 T Chip_Clock_Enable
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W UART3_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W MCPWM_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W M0APP_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0014ce 00000068 T gpioRead
+PdM/antirrebote/out/antirrebote.elf:1a001554 00000074 T boardInit
+PdM/antirrebote/out/antirrebote.elf:1a000040 000000d4 T g_pfnVendorVectors
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GINT1_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a0011c4 00000018 T tickPowerSet
+PdM/antirrebote/out/antirrebote.elf:1a000d90 00000058 T Chip_Clock_SetBaseClock
+PdM/antirrebote/out/antirrebote.elf:1a00119c 0000001c T cyclesCounterInit
+PdM/antirrebote/out/antirrebote.elf:1a0001ba 00000002 W GPIO4_IRQHandler
+PdM/antirrebote/out/antirrebote.elf:1a000708 0000000c T Board_SystemInit
