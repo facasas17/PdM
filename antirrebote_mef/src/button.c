@@ -7,9 +7,7 @@
 
 /*=====[Inclusion of own header]=============================================*/
 
-#include "button.h"
-
-/*=====[Inclusions of private function dependencies]=========================*/
+#include "../../antirrebote_mef/inc/button.h"
 
 #include <sapi.h>
 

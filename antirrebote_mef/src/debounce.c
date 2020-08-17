@@ -7,12 +7,10 @@
 
 /*=====[Inclusion of own header]=============================================*/
 
-#include "debounce.h"
-
-/*=====[Inclusions of private function dependencies]=========================*/
+#include "../../antirrebote_mef/inc/debounce.h"
 
 #include <sapi.h>
-#include "button.h"
+#include "../../antirrebote_mef/inc/button.h"
 
 /*=====[Definition macros of private constants]==============================*/
 

@@ -8,10 +8,10 @@
 
 /*=====[Inclusions of function dependencies]=================================*/
 
-#include "../inc/main.h"
+#include "../../antirrebote_mef/inc/main.h"
 
+#include "../../antirrebote_mef/inc/debounce.h"
 #include "sapi.h"
-#include "debounce.h"
 
 /*=====[Definition macros of private constants]==============================*/
 
@@ -39,7 +39,7 @@ int main( void )
    // ----- Repeat for ever -------------------------
    while( true ) {
        if( delayRead(&fsm) ){
-           fsmUpdate();
+    	   fsmSelectUpdate();
        }
    }
 
