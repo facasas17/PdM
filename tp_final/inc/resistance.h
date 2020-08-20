@@ -28,7 +28,7 @@ typedef enum{
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
 void resistanceInit( void );
-void resistanceSet(resistance_t resistance, bool_t state);
+void resistanceSet( resistance_t resistance, bool_t state );
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 

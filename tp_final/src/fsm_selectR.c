@@ -24,8 +24,6 @@ const uint16_t MID_MIN_VALUE = (MAX_VALUE * 1)/VCC_MICRO;
 const uint16_t MIN_VALUE = 0;
 const uint16_t HISTERESIS = 10;
 
-/*=====[Private function-like macros]========================================*/
-
 /*=====[Definitions of private data types]===================================*/
 
 // Posibles estados de la MEF
@@ -35,10 +33,6 @@ typedef enum{
 	MIN,
 } selectState_t;
 
-/*=====[Definitions of external public global variables]=====================*/
-
-/*=====[Definitions of public global variables]==============================*/
-
 /*=====[Definitions of private global variables]=============================*/
 
 static selectState_t fsmSelectState;
@@ -46,44 +40,43 @@ static uint16_t value;
 
 /*=====[Prototypes (declarations) of private functions]======================*/
 
-static void fsmSelectError(void);
+static void fsmSelectError( void );
 
 /*=====[Implementations of public functions]=================================*/
 
-void fsmSelectInit( void ){
-
+void fsmSelectInit( void )
+{
 	boardInit();
 	adcConfig( ADC_ENABLE ); /* ADC */
 	fsmSelectState = MAX;
 	resistanceInit();
 }
 
-void fsmSelectUpdate( void ){
-
+void fsmSelectUpdate( void )
+{
 	switch(fsmSelectState){
 		case MAX:
 			// Actualizar salidas
-            resistanceSet(RES_HIGH, ON);
-            resistanceSet(RES_MID, OFF);
-            resistanceSet(RES_LOW, OFF);
+            resistanceSet( RES_HIGH, ON );
+            resistanceSet( RES_MID, OFF );
+            resistanceSet( RES_LOW, OFF );
 
-            // Chequear condiciones de transicion de estados
+            // Ver condiciones de transicion de estados
             if ( (value > (MID_MIN_VALUE + HISTERESIS)) && (value <= MID_MAX_VALUE) ){
             	fsmSelectState = MID;
             }
             else if ( (value >= MIN_VALUE) && (value <= MID_MIN_VALUE) ){
             		fsmSelectState = MIN;
             	 }
-
 			break;
 
 		case MID:
 			// Actualizar salidas
-            resistanceSet(RES_HIGH, OFF);
-            resistanceSet(RES_MID, ON);
-            resistanceSet(RES_LOW, OFF);
+            resistanceSet( RES_HIGH, OFF );
+            resistanceSet( RES_MID, ON );
+            resistanceSet( RES_LOW, OFF );
 
-            // Chequear condiciones de transicion de estados
+            // Ver condiciones de transicion de estados
             if ( (value > (MID_MAX_VALUE + HISTERESIS)) && (value <= MAX_VALUE) ){
             	fsmSelectState = MAX;
             }
@@ -94,11 +87,11 @@ void fsmSelectUpdate( void ){
 
 		case MIN:
 			// Actualizar salidas
-            resistanceSet(RES_HIGH, OFF);
-            resistanceSet(RES_MID, OFF);
-            resistanceSet(RES_LOW, ON);
+            resistanceSet( RES_HIGH, OFF );
+            resistanceSet( RES_MID, OFF );
+            resistanceSet( RES_LOW, ON );
 
-            // Chequear condiciones de transicion de estados
+            // Ver condiciones de transicion de estados
             if ( (value > (MID_MAX_VALUE + HISTERESIS)) && (value <= MAX_VALUE) ){
             	fsmSelectState = MAX;
             }
@@ -114,11 +107,10 @@ void fsmSelectUpdate( void ){
 	value = adcRead( CH1 );
 }
 
-/*=====[Implementations of interrupt functions]==============================*/
-
 /*=====[Implementations of private functions]================================*/
 
-static void fsmSelectError(void)
+static void fsmSelectError( void )
 {
+	gpioToggle( LEDB );
 	fsmSelectInit();
 }

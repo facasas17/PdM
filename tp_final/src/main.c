@@ -31,19 +31,16 @@ int main( void )
    // ----- Setup -----------------------------------
 
    delay_t fsm_select;		/* Defino delay no bloqueante para la actualización de la MEF */
+
    delayInit( &fsm_select, FSM_SELECT_PERIODICITY );
 
    fsmSelectInit();
 
-   // ----- Repeat for ever -------------------------
    while( true ) {
        if( delayRead(&fsm_select) ){
            fsmSelectUpdate();
        }
    }
 
-   // YOU NEVER REACH HERE, because this program runs directly or on a
-   // microcontroller and is not called by any Operating System, as in the 
-   // case of a PC program.
    return 0;
 }
