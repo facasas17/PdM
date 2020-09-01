@@ -18,6 +18,7 @@
 #include "seos_pont_2014_scheduler.h" // <= scheduler and system initialization header
 
 #include "../../semaforo_Seos/inc/task1.h"
+#include "../../semaforo_Seos/inc/task2.h"
 
 /*==================[definiciones y macros]==================================*/
 
@@ -38,25 +39,22 @@ int main( void ){
    // Inicializar y configurar la plataforma
    boardConfig();
 
-   task1_Init(LEDB);
-   task1_Init(LED1);
-   task1_Init(LED2);
+   task1_Init(); //MEF semaforo
+
+   task2_Init();   //MEF de antirrebote
 
    // FUNCION que inicializa el planificador de tareas
    schedulerInit();
 
    // Se agrega la tarea tarea1 al planificador
    schedulerAddTask( task1_Update, // funcion de tarea a agregar
-                     (void*)LEDB,  // parametro de la tarea
+                     0,  		   // parametro de la tarea
                      0,            // offset de ejecucion en ticks
-                     100           // periodicidad de ejecucion en ticks
+                     1000          // periodicidad de ejecucion en ticks
                    );
 
-   // Se agrega la tarea tarea2 al planificador
-   schedulerAddTask( task1_Update, (void*)LED1, 1, 500 );
-
    // Se agrega la tarea tarea3 al planificador
-   schedulerAddTask( task1_Update, (void*)LED2, 2, 1000 );
+   schedulerAddTask( task2_Update, 0, 2, 100 );
 
    // FUNCION que inicializa la interrupcion que ejecuta el planificador de
    // tareas con tick cada 1ms.

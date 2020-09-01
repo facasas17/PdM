@@ -5,8 +5,8 @@
  * Date: 2018/10/04
  *===========================================================================*/
 
-#ifndef _TASK1_H_
-#define _TASK1_H_
+#ifndef _TASK2_H_
+#define _TASK2_H_
 
 /*==================[inclusions]=============================================*/
 
@@ -27,10 +27,10 @@ extern "C" {
 /*==================[external functions declaration]=========================*/
 
 // Funcion que inicializa la tarea
-void task1_Init( void );
+void task2_Init( void );
 
 // Funcion que se ejecuta periodicamente
-void task1_Update( void* taskParam );
+void task2_Update( void* taskParam );
 
 /*==================[cplusplus]==============================================*/
 
@@ -39,4 +39,4 @@ void task1_Update( void* taskParam );
 #endif
 
 /*==================[end of file]============================================*/
-#endif /* #ifndef _TASK1_H_ */
+#endif /* #ifndef _TASK2_H_ */
